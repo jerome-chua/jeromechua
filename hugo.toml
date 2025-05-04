@@ -1,4 +1,4 @@
-baseURL = 'https://jeromechua.pages.dev'
+baseURL = 'jeromechua.pages.dev'
 name = 'Jerome Chua'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
