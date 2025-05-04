@@ -1,0 +1,9 @@
+baseURL = 'https://example.org/'
+name = 'Jerome Chua'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'paper'
+color = 'linen' 
+twitter = 'jeromechuame'               # twitter.com/YOUR_TWITTER_ID
+github = 'jerome-chua'
+linkedin = 'jeromechua'
