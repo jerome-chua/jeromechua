@@ -1,9 +1,9 @@
-baseURL = 'jeromechua.pages.dev'
+baseURL = 'https://jeromechua.pages.dev'
 name = 'Jerome Chua'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'paper'
 color = 'linen' 
-twitter = 'jeromechuame'               # twitter.com/YOUR_TWITTER_ID
+twitter = 'jeromechuame'
 github = 'jerome-chua'
 linkedin = 'jeromechua'
