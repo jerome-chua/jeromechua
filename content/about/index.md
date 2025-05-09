@@ -5,15 +5,15 @@ weight: 2
 author: "Jerome Chua"
 ---
 
-I live in 🇸🇬 Singapore, & currently working as an AI Engineer.
+I live in 🇸🇬 Singapore, & currently work as an AI Engineer.
 
-Email: jerome.chuame@gmail.com
+✉️ Email: jerome.chuame@gmail.com
 
-Things that are of interest:
+### Things that are of interest:
 
-- **Agentic AI.** Currently going through various AI orchestration frameworks & reading respective source code to see how each frames the issue.
-- **Design Pattterns.** Reading the GoF's 23 design patterns, & just focus on 1 or 2 per year.
-- **Linguistics.** To use LLMs well, basic understanding is vital, I lean towards Chomsky's view that language acquisition is innate & thus concluding LLMs do not have "understanding".
-- **Software Architecture.** Still a novice when it comes to all 3 levels, & the ability to zoom in/out is where I'd like to be in 5 years.
-- **System Design.** Knowledge of scalable systems & GenAI systems keep giving when I truly grasp each module & scenario; key starting point for every feature that I undertake.
-- **Philosophy.** I used to take my Saturday mornings off to specically read Plato's Republic, & gained alot of insight to how an ideal society could look like. Other philosophers' works from Charles Taylor, John Rawls & René Girard have greatly shaped my world view too.
+- **Agentic AI.** Evaluating AI orchestration frameworks through source code analysis to understand different approaches.
+- **Design Pattterns.** Working through GoF's patterns gradually, mastering just 1-2 annually for depth.
+- **Linguistics.** To use LLMs well, basic understanding is vital. Alight with Chomsky's view innate language acquisition differs from LLM's statistical approach (no true understanding).
+- **Software Architecture.** Building competency across all levels; aiming to develop zoom-in/out capability within 5 years.
+- **System Design.** Focusing on scalable and GenAI systems; using modular understanding as foundation for new features.
+- **Philosophy.** Previously dedicated Saturday mornings to Plato's Republic; also shaped by Taylor, Rawls, and Girard's perspectives on society.
