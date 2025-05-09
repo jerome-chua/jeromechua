@@ -1,10 +1,9 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = 'Jerome Chua'
+title = 'Software/AI Engineering'
 author = 'Jerome Chua'
-theme = 'paper'
-color = 'linen' 
 name = 'Jerome Chua'
+theme = 'paper'
 
 [pagination]
   pagerSize = 4
@@ -14,8 +13,9 @@ name = 'Jerome Chua'
   twitter = 'jeromechuame'
   github = 'jerome-chua'
 
-  name = 'Jerome'
-  bio = 'Discover fresh context'
+  name = 'Jerome Chua'
+  avatar = 'jerome.chuame@gmail.com'
+  bio = 'Intentionally learning everyday.'
 
 [menu]
 
@@ -29,3 +29,8 @@ name = 'Jerome Chua'
     name = "Contact"
     url = "/contact/"
     weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
