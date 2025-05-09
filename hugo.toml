@@ -1,6 +1,6 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = 'Software/AI Engineering'
+title = 'Jerome Chua'
 author = 'Jerome Chua'
 name = 'Jerome Chua'
 theme = 'paper'
@@ -13,12 +13,7 @@ theme = 'paper'
   twitter = 'jeromechuame'
   github = 'jerome-chua'
 
-  name = 'Jerome Chua'
-  avatar = 'jerome.chuame@gmail.com'
-  bio = 'Intentionally learning everyday.'
-
 [menu]
-
   [[menu.main]]
     identifier = "about"
     name = "About"
