@@ -20,20 +20,46 @@
   />
 
   
-  <title>AI Orchestration Frameworks - Jerome Chua</title>
+  <title>AI Orchestration - Jerome Chua</title>
 
   
   <meta name="theme-color" />
 
-  <meta name="description" content="Hello World" />
-  <meta name="author" content="Jerome Chua" /><link rel="preload stylesheet" as="style" href="/main.min.css" />
+  <meta name="description" content="AI Orchestration&hellip;
+Current Leading Frameworks
+Semantic Kernel
+Semantic Kernel is a model-agnostic SDK to build, orchestrate &amp; deploy AI agents and multi-agent systems
+# Single Agent
+LangChain
+most basic code example for Single Agent
+LlamaIndex
+most basic code example for Single Agent
+
+Underlying Concepts from Key Papers
+Tool Calling
+Read more: Evaluation Driven Development
+
+Evals
+
+LLM-as-a-Judge
+Code-based
+Human Label
+
+What to look at
+
+Trajectory
+Convergence Score
+
+Tools
+Arize AI (Phoenix UI)" />
+  <meta name="author" content="Jerome" /><link rel="preload stylesheet" as="style" href="/main.min.css" />
 
   
   <link rel="preload" as="image" href="/theme.png" />
 
   
 
-  
+  <link rel="preload" as="image" href="/twitter.svg" /><link rel="preload" as="image" href="/github.svg" />
 
   <script
     defer
@@ -52,14 +78,22 @@
   />
 
   <meta name="generator" content="Hugo 0.147.1">
-  <meta itemprop="name" content="AI Orchestration Frameworks">
-  <meta itemprop="description" content="Hello World">
+  <meta itemprop="name" content="AI Orchestration">
+  <meta itemprop="description" content="AI Orchestration…
+Current Leading Frameworks Semantic Kernel Semantic Kernel is a model-agnostic SDK to build, orchestrate &amp; deploy AI agents and multi-agent systems
+# Single Agent LangChain most basic code example for Single Agent LlamaIndex most basic code example for Single Agent Underlying Concepts from Key Papers Tool Calling
+Read more: Evaluation Driven Development
+Evals LLM-as-a-Judge Code-based Human Label What to look at Trajectory Convergence Score Tools Arize AI (Phoenix UI)">
   <meta itemprop="datePublished" content="2025-05-04T09:22:06+08:00">
   <meta itemprop="dateModified" content="2025-05-04T09:22:06+08:00">
-  <meta itemprop="wordCount" content="2"><meta property="og:url" content="/posts/1_orchestration_frameworks/">
+  <meta itemprop="wordCount" content="73"><meta property="og:url" content="/posts/1_orchestration_frameworks/">
   <meta property="og:site_name" content="Jerome Chua">
-  <meta property="og:title" content="AI Orchestration Frameworks">
-  <meta property="og:description" content="Hello World">
+  <meta property="og:title" content="AI Orchestration">
+  <meta property="og:description" content="AI Orchestration…
+Current Leading Frameworks Semantic Kernel Semantic Kernel is a model-agnostic SDK to build, orchestrate &amp; deploy AI agents and multi-agent systems
+# Single Agent LangChain most basic code example for Single Agent LlamaIndex most basic code example for Single Agent Underlying Concepts from Key Papers Tool Calling
+Read more: Evaluation Driven Development
+Evals LLM-as-a-Judge Code-based Human Label What to look at Trajectory Convergence Score Tools Arize AI (Phoenix UI)">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -67,8 +101,12 @@
     <meta property="article:modified_time" content="2025-05-04T09:22:06+08:00">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="AI Orchestration Frameworks">
-  <meta name="twitter:description" content="Hello World">
+  <meta name="twitter:title" content="AI Orchestration">
+  <meta name="twitter:description" content="AI Orchestration…
+Current Leading Frameworks Semantic Kernel Semantic Kernel is a model-agnostic SDK to build, orchestrate &amp; deploy AI agents and multi-agent systems
+# Single Agent LangChain most basic code example for Single Agent LlamaIndex most basic code example for Single Agent Underlying Concepts from Key Papers Tool Calling
+Read more: Evaluation Driven Development
+Evals LLM-as-a-Judge Code-based Human Label What to look at Trajectory Convergence Score Tools Arize AI (Phoenix UI)">
 
   <link rel="canonical" href="/posts/1_orchestration_frameworks/" />
 </head>
@@ -141,16 +179,70 @@
 
   <div
     class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
-  >
+  ><nav
+      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+    ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/contact/"
+        >Contact</a
+      ></nav><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+    >
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/jeromechuame"
+        target="_blank"
+        rel="me"
+      >twitter</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/jerome-chua"
+        target="_blank"
+        rel="me"
+      >github</a>
+    </nav>
   </div>
 </header>
 <main
       class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
     ><article>
   <header class="mb-14">
-    <h1 class="my-0! pb-2.5">AI Orchestration Frameworks</h1><div class="text-xs antialiased opacity-60"><time>May 4, 2025</time></div></header>
+    <h1 class="my-0! pb-2.5">AI Orchestration</h1><div class="text-xs antialiased opacity-60"><time>May 4, 2025</time></div></header>
 
-  <section><p>Hello World</p>
+  <section><p>AI Orchestration&hellip;</p>
+<h1 id="current-leading-frameworks">Current Leading Frameworks</h1>
+<h2 id="semantic-kernel">Semantic Kernel</h2>
+<p>Semantic Kernel is a model-agnostic SDK to build, orchestrate &amp; deploy AI agents and multi-agent systems</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Single Agent</span>
+</span></span></code></pre></div><h2 id="langchain">LangChain</h2>
+<pre tabindex="0"><code>most basic code example for Single Agent
+</code></pre><h2 id="llamaindex">LlamaIndex</h2>
+<pre tabindex="0"><code>most basic code example for Single Agent
+</code></pre><hr>
+<h1 id="underlying-concepts-from-key-papers">Underlying Concepts from Key Papers</h1>
+<p>Tool Calling</p>
+<p>Read more: Evaluation Driven Development</p>
+<hr>
+<h1 id="evals">Evals</h1>
+<ul>
+<li>LLM-as-a-Judge</li>
+<li>Code-based</li>
+<li>Human Label</li>
+</ul>
+<h2 id="what-to-look-at">What to look at</h2>
+<ul>
+<li>Trajectory</li>
+<li>Convergence Score</li>
+</ul>
+<h2 id="tools">Tools</h2>
+<p>Arize AI (Phoenix UI)</p>
+<h2 id="running-experiments">Running Experiments</h2>
 </section>
 
   </article></main><footer

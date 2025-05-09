@@ -1,6 +1,31 @@
 baseURL = '/'
 languageCode = 'en-us'
 title = 'Jerome Chua'
+author = 'Jerome Chua'
 theme = 'paper'
 color = 'linen' 
 name = 'Jerome Chua'
+
+[pagination]
+  pagerSize = 4
+
+[params]
+  color = 'linen'
+  twitter = 'jeromechuame'
+  github = 'jerome-chua'
+
+  name = 'Jerome'
+  bio = 'Discover fresh context'
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 10

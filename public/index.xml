@@ -9,11 +9,11 @@
     <lastBuildDate>Sun, 04 May 2025 09:22:06 +0800</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>AI Orchestration Frameworks</title>
+      <title>AI Orchestration</title>
       <link>/posts/1_orchestration_frameworks/</link>
       <pubDate>Sun, 04 May 2025 09:22:06 +0800</pubDate>
       <guid>/posts/1_orchestration_frameworks/</guid>
-      <description>&lt;p&gt;Hello World&lt;/p&gt;</description>
+      <description>&lt;p&gt;AI Orchestration&amp;hellip;&lt;/p&gt;&#xA;&lt;h1 id=&#34;current-leading-frameworks&#34;&gt;Current Leading Frameworks&lt;/h1&gt;&#xA;&lt;h2 id=&#34;semantic-kernel&#34;&gt;Semantic Kernel&lt;/h2&gt;&#xA;&lt;p&gt;Semantic Kernel is a model-agnostic SDK to build, orchestrate &amp;amp; deploy AI agents and multi-agent systems&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Single Agent&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;langchain&#34;&gt;LangChain&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;most basic code example for Single Agent&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;llamaindex&#34;&gt;LlamaIndex&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;most basic code example for Single Agent&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;&#xA;&lt;h1 id=&#34;underlying-concepts-from-key-papers&#34;&gt;Underlying Concepts from Key Papers&lt;/h1&gt;&#xA;&lt;p&gt;Tool Calling&lt;/p&gt;&#xA;&lt;p&gt;Read more: Evaluation Driven Development&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;evals&#34;&gt;Evals&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;LLM-as-a-Judge&lt;/li&gt;&#xA;&lt;li&gt;Code-based&lt;/li&gt;&#xA;&lt;li&gt;Human Label&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;what-to-look-at&#34;&gt;What to look at&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Trajectory&lt;/li&gt;&#xA;&lt;li&gt;Convergence Score&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;tools&#34;&gt;Tools&lt;/h2&gt;&#xA;&lt;p&gt;Arize AI (Phoenix UI)&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
