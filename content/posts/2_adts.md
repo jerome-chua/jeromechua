@@ -1,25 +1,39 @@
 +++
 date = '2025-11-26T21:50:30+08:00'
-draft = true
+draft = false
 title = 'Abstract Data Structures (ADT) & Implementations'
 +++
 
-To implement a ADT Priority Queue, we can use a Binary Heap.
+In software engineering, depending on the nature of the problem, system architecture discussions can take take on different levels, going deeper as more technical details are considered & viewing same things differently.
 
-A Binary Heap, is a Binary Tree with a certain ordering constraint.
+If you break this down to simpler, constrained topics like data structures, a similar thing occurs. Depending on implementation details, a simple thing like a Binary Tree can take on different abstractions in one's mind.
 
-A Binary Tree can be represented as:
+## 🗒️ Context
 
-- group of nodes with pointers where by each node points to at most 2 other nodes.
+To implement a ADT Priority Queue, we can use a Binary Heap. A Binary Heap, is a Binary Tree with a certain ordering constraint.
+
+A Binary Tree can be implemented as either:
+
+- a group of nodes with pointers where each node points to at most 2 other nodes
 - an array using implicit indexing
 
-The insight here is that depending on context, the Binary Tree exists in two ontological:
+## 💡 Insight
 
-1. Binary Tree as an implementation itself
+Depending on context, the Binary Tree exists in two ontological forms:
 
-- defining logical structure & its tree operations (i.e. traverse, search, delete etc.)
+#### Binary Tree is as an implementation itself
+
+- if defining logical structure & its tree operations _(i.e. traverse, search, delete etc.)_
 - when the tree structure solves the problem
 
-2. Binary Tree as an ADT
+#### Binary Tree as an ADT
 
-- eg.a Priority Queue is implemented using a Binary Heap (an array that maintains Binary Tree properties)
+- eg. a Priority Queue is implemented using a Binary Heap _(an array that maintains Binary Tree properties)_
+
+## Summary
+
+A Binary Tree simultaneously functions as an ADT (abstracting over pointer vs array
+implementations) & as an implementation mechanism (providing structure for Priority
+Queue via a Binary Heap).
+
+This dual role illustrates how abstraction is relative depending on context.

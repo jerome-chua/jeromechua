@@ -1,0 +1,233 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="en-us"
+  dir="ltr"
+><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Abstract Data Structures (ADT) &amp; Implementations - Jerome Chua</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="In software engineering, depending on the nature of the problem, system architecture discussions can take take on different levels, going deeper as more technical details are considered &amp; viewing same things differently.
+If you break this down to simpler, constrained topics like data structures, a similar thing occurs. Depending on implementation details, a simple thing like a Binary Tree can take on different abstractions in one&rsquo;s mind.
+🗒️ Context
+To implement a ADT Priority Queue, we can use a Binary Heap. A Binary Heap, is a Binary Tree with a certain ordering constraint." />
+  <meta name="author" content="Jerome Chua" /><link rel="preload stylesheet" as="style" href="/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="/theme.png" />
+
+  
+
+  <link rel="preload" as="image" href="/twitter.svg" /><link rel="preload" as="image" href="/github.svg" />
+
+  <script
+    defer
+    src="/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.147.1">
+  <meta itemprop="name" content="Abstract Data Structures (ADT) & Implementations">
+  <meta itemprop="description" content="In software engineering, depending on the nature of the problem, system architecture discussions can take take on different levels, going deeper as more technical details are considered &amp; viewing same things differently.
+If you break this down to simpler, constrained topics like data structures, a similar thing occurs. Depending on implementation details, a simple thing like a Binary Tree can take on different abstractions in one’s mind.
+🗒️ Context To implement a ADT Priority Queue, we can use a Binary Heap. A Binary Heap, is a Binary Tree with a certain ordering constraint.">
+  <meta itemprop="datePublished" content="2025-11-26T21:50:30+08:00">
+  <meta itemprop="dateModified" content="2025-11-26T21:50:30+08:00">
+  <meta itemprop="wordCount" content="224"><meta property="og:url" content="/posts/2_adts/">
+  <meta property="og:site_name" content="Jerome Chua">
+  <meta property="og:title" content="Abstract Data Structures (ADT) & Implementations">
+  <meta property="og:description" content="In software engineering, depending on the nature of the problem, system architecture discussions can take take on different levels, going deeper as more technical details are considered &amp; viewing same things differently.
+If you break this down to simpler, constrained topics like data structures, a similar thing occurs. Depending on implementation details, a simple thing like a Binary Tree can take on different abstractions in one’s mind.
+🗒️ Context To implement a ADT Priority Queue, we can use a Binary Heap. A Binary Heap, is a Binary Tree with a certain ordering constraint.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-11-26T21:50:30+08:00">
+    <meta property="article:modified_time" content="2025-11-26T21:50:30+08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Abstract Data Structures (ADT) & Implementations">
+  <meta name="twitter:description" content="In software engineering, depending on the nature of the problem, system architecture discussions can take take on different levels, going deeper as more technical details are considered &amp; viewing same things differently.
+If you break this down to simpler, constrained topics like data structures, a similar thing occurs. Depending on implementation details, a simple thing like a Binary Tree can take on different abstractions in one’s mind.
+🗒️ Context To implement a ADT Priority Queue, we can use a Binary Heap. A Binary Heap, is a Binary Tree with a certain ordering constraint.">
+
+  <link rel="canonical" href="/posts/2_adts/" />
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="/"
+      >Jerome Chua</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  ><nav
+      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+    ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/contact/"
+        >Contact</a
+      ></nav><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+    >
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/jeromechuame"
+        target="_blank"
+        rel="me"
+      >twitter</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/jerome-chua"
+        target="_blank"
+        rel="me"
+      >github</a>
+    </nav>
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">Abstract Data Structures (ADT) &amp; Implementations</h1><div class="text-xs antialiased opacity-60"><time>Nov 26, 2025</time></div></header>
+
+  <section><p>In software engineering, depending on the nature of the problem, system architecture discussions can take take on different levels, going deeper as more technical details are considered &amp; viewing same things differently.</p>
+<p>If you break this down to simpler, constrained topics like data structures, a similar thing occurs. Depending on implementation details, a simple thing like a Binary Tree can take on different abstractions in one&rsquo;s mind.</p>
+<h2 id="-context">🗒️ Context</h2>
+<p>To implement a ADT Priority Queue, we can use a Binary Heap. A Binary Heap, is a Binary Tree with a certain ordering constraint.</p>
+<p>A Binary Tree can be implemented as either:</p>
+<ul>
+<li>a group of nodes with pointers where each node points to at most 2 other nodes</li>
+<li>an array using implicit indexing</li>
+</ul>
+<h2 id="-insight">💡 Insight</h2>
+<p>Depending on context, the Binary Tree exists in two ontological forms:</p>
+<h4 id="binary-tree-is-as-an-implementation-itself">Binary Tree is as an implementation itself</h4>
+<ul>
+<li>if defining logical structure &amp; its tree operations <em>(i.e. traverse, search, delete etc.)</em></li>
+<li>when the tree structure solves the problem</li>
+</ul>
+<h4 id="binary-tree-as-an-adt">Binary Tree as an ADT</h4>
+<ul>
+<li>eg. a Priority Queue is implemented using a Binary Heap <em>(an array that maintains Binary Tree properties)</em></li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>A Binary Tree simultaneously functions as an ADT (abstracting over pointer vs array
+implementations) &amp; as an implementation mechanism (providing structure for Priority
+Queue via a Binary Heap).</p>
+<p>This dual role illustrates how abstraction is relative depending on context.</p>
+</section>
+
+  </article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2025
+    <a class="link" href="/">Jerome Chua</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+</body>
+</html>
