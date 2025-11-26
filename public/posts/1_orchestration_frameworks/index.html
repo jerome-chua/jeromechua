@@ -11,7 +11,7 @@
   style="--bg:#faf8f1"
   lang="en-us"
   dir="ltr"
-><head>
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta
@@ -20,95 +20,69 @@
   />
 
   
-  <title>AI Orchestration - Jerome Chua</title>
+  <title>Container Orchestration - Jerome Chua</title>
 
   
   <meta name="theme-color" />
 
-  <meta name="description" content="AI Orchestration&hellip;
-Current Leading Frameworks
-Semantic Kernel
-Semantic Kernel is a model-agnostic SDK to build, orchestrate &amp; deploy AI agents and multi-agent systems
-# Single Agent
-LangChain
-most basic code example for Single Agent
-LlamaIndex
-most basic code example for Single Agent
+  <meta name="description" content="Basics
+Why
+How
+What
+When
+Who
+Docker Compose vs Kubernetes
+Terminology
 
-Underlying Concepts from Key Papers
-Tool Calling
-Read more: Evaluation Driven Development
+Cluster
+Entire Kubernetes system (i.e. nodes, pods, services, Kubernetes processes)
+Node
+Single physical/virtual machine that runs containers
+Pod
+Smallest deployable unit in Kubernetes (usually, 1 container)
 
-Evals
-
-LLM-as-a-Judge
-Code-based
-Human Label
-
-What to look at
-
-Trajectory
-Convergence Score
-
-Tools
-Arize AI (Phoenix UI)" />
-  <meta name="author" content="Jerome" /><link rel="preload stylesheet" as="style" href="/main.min.css" />
+Cluster
+├── Node 1
+│   ├── Pod A
+│   ├── Pod B
+│   └── Pod C
+├── Node 2
+│   ├── Pod D
+│   └── Pod E
+└── Node 3
+    ├── Pod F
+    ├── Pod G
+    └── Pod H
+Bare Bones Setup
+Minikube &#43; Docker
+Minikube is a lightweight Kubernetes &hellip;
+Docker automates away the need to create boilerplate code by pulling images." />
+  <meta name="author" content="Jerome Chua" /><link rel="preload stylesheet" as="style" href="//localhost:1313/main.min.css" />
 
   
-  <link rel="preload" as="image" href="/theme.png" />
+  <link rel="preload" as="image" href="//localhost:1313/theme.png" />
 
   
 
-  <link rel="preload" as="image" href="/twitter.svg" /><link rel="preload" as="image" href="/github.svg" />
+  <link rel="preload" as="image" href="//localhost:1313/twitter.svg" /><link rel="preload" as="image" href="//localhost:1313/github.svg" />
 
   <script
     defer
-    src="/highlight.min.js"
+    src="//localhost:1313/highlight.min.js"
     onload="hljs.initHighlightingOnLoad();"
   ></script>
 
   
   <link
     rel="icon"
-    href="/favicon.ico"
+    href="//localhost:1313/favicon.ico"
   />
   <link
     rel="apple-touch-icon"
-    href="/apple-touch-icon.png"
+    href="//localhost:1313/apple-touch-icon.png"
   />
 
   <meta name="generator" content="Hugo 0.147.1">
-  <meta itemprop="name" content="AI Orchestration">
-  <meta itemprop="description" content="AI Orchestration…
-Current Leading Frameworks Semantic Kernel Semantic Kernel is a model-agnostic SDK to build, orchestrate &amp; deploy AI agents and multi-agent systems
-# Single Agent LangChain most basic code example for Single Agent LlamaIndex most basic code example for Single Agent Underlying Concepts from Key Papers Tool Calling
-Read more: Evaluation Driven Development
-Evals LLM-as-a-Judge Code-based Human Label What to look at Trajectory Convergence Score Tools Arize AI (Phoenix UI)">
-  <meta itemprop="datePublished" content="2025-05-04T09:22:06+08:00">
-  <meta itemprop="dateModified" content="2025-05-04T09:22:06+08:00">
-  <meta itemprop="wordCount" content="73"><meta property="og:url" content="/posts/1_orchestration_frameworks/">
-  <meta property="og:site_name" content="Jerome Chua">
-  <meta property="og:title" content="AI Orchestration">
-  <meta property="og:description" content="AI Orchestration…
-Current Leading Frameworks Semantic Kernel Semantic Kernel is a model-agnostic SDK to build, orchestrate &amp; deploy AI agents and multi-agent systems
-# Single Agent LangChain most basic code example for Single Agent LlamaIndex most basic code example for Single Agent Underlying Concepts from Key Papers Tool Calling
-Read more: Evaluation Driven Development
-Evals LLM-as-a-Judge Code-based Human Label What to look at Trajectory Convergence Score Tools Arize AI (Phoenix UI)">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-05-04T09:22:06+08:00">
-    <meta property="article:modified_time" content="2025-05-04T09:22:06+08:00">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="AI Orchestration">
-  <meta name="twitter:description" content="AI Orchestration…
-Current Leading Frameworks Semantic Kernel Semantic Kernel is a model-agnostic SDK to build, orchestrate &amp; deploy AI agents and multi-agent systems
-# Single Agent LangChain most basic code example for Single Agent LlamaIndex most basic code example for Single Agent Underlying Concepts from Key Papers Tool Calling
-Read more: Evaluation Driven Development
-Evals LLM-as-a-Judge Code-based Human Label What to look at Trajectory Convergence Score Tools Arize AI (Phoenix UI)">
-
-  <link rel="canonical" href="/posts/1_orchestration_frameworks/" />
 </head>
 <body
     class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
@@ -118,7 +92,7 @@ Evals LLM-as-a-Judge Code-based Human Label What to look at Trajectory Convergen
   <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
     <a
       class="-translate-y-[1px] text-2xl font-medium"
-      href="/"
+      href="//localhost:1313/"
       >Jerome Chua</a
     >
     <div
@@ -213,43 +187,85 @@ Evals LLM-as-a-Judge Code-based Human Label What to look at Trajectory Convergen
       class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
     ><article>
   <header class="mb-14">
-    <h1 class="my-0! pb-2.5">AI Orchestration</h1><div class="text-xs antialiased opacity-60"><time>May 4, 2025</time></div></header>
+    <h1 class="my-0! pb-2.5">Container Orchestration</h1><div class="text-xs antialiased opacity-60"><time>May 4, 2025</time></div></header>
 
-  <section><p>AI Orchestration&hellip;</p>
-<h1 id="current-leading-frameworks">Current Leading Frameworks</h1>
-<h2 id="semantic-kernel">Semantic Kernel</h2>
-<p>Semantic Kernel is a model-agnostic SDK to build, orchestrate &amp; deploy AI agents and multi-agent systems</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Single Agent</span>
-</span></span></code></pre></div><h2 id="langchain">LangChain</h2>
-<pre tabindex="0"><code>most basic code example for Single Agent
-</code></pre><h2 id="llamaindex">LlamaIndex</h2>
-<pre tabindex="0"><code>most basic code example for Single Agent
-</code></pre><hr>
-<h1 id="underlying-concepts-from-key-papers">Underlying Concepts from Key Papers</h1>
-<p>Tool Calling</p>
-<p>Read more: Evaluation Driven Development</p>
-<hr>
-<h1 id="evals">Evals</h1>
+  <section><h1 id="basics">Basics</h1>
+<h2 id="why">Why</h2>
+<h2 id="how">How</h2>
+<h2 id="what">What</h2>
+<h2 id="when">When</h2>
+<h2 id="who">Who</h2>
+<h3 id="docker-compose-vs-kubernetes">Docker Compose vs Kubernetes</h3>
+<h2 id="terminology">Terminology</h2>
 <ul>
-<li>LLM-as-a-Judge</li>
-<li>Code-based</li>
-<li>Human Label</li>
+<li>Cluster
+Entire Kubernetes system (i.e. nodes, pods, services, Kubernetes processes)</li>
+<li>Node
+Single physical/virtual machine that runs containers</li>
+<li>Pod
+Smallest deployable unit in Kubernetes (usually, 1 container)</li>
 </ul>
-<h2 id="what-to-look-at">What to look at</h2>
+<pre tabindex="0"><code>Cluster
+├── Node 1
+│   ├── Pod A
+│   ├── Pod B
+│   └── Pod C
+├── Node 2
+│   ├── Pod D
+│   └── Pod E
+└── Node 3
+    ├── Pod F
+    ├── Pod G
+    └── Pod H
+</code></pre><h1 id="bare-bones-setup">Bare Bones Setup</h1>
+<h2 id="minikube--docker">Minikube + Docker</h2>
+<p>Minikube is a lightweight Kubernetes &hellip;
+Docker automates away the need to create boilerplate code by pulling images.</p>
+<h3 id="what-is-needed">What is needed</h3>
 <ul>
-<li>Trajectory</li>
-<li>Convergence Score</li>
+<li>Manifest
+The YAML file needed for Kubernetes</li>
 </ul>
-<h2 id="tools">Tools</h2>
-<p>Arize AI (Phoenix UI)</p>
-<h2 id="running-experiments">Running Experiments</h2>
+<h1 id="under-the-hood-of-kubernetes">Under the hood of Kubernetes</h1>
+<h2 id="visual-representation">Visual Representation</h2>
+<pre tabindex="0"><code>Kubernetes System
+├── Control Plane
+│   ├── API Server
+│   ├── etcd
+│   ├── Scheduler
+│   └── Controller Manager
+│
+├── Worker Nodes
+│   ├── kubelet
+│   ├── kube-proxy
+│   └── Container Runtime
+│
+├── Workloads
+│   ├── Pods
+│   ├── Deployments
+│   └── Services
+│
+└── Networking &amp; Storage
+    ├── Services
+    ├── Ingress
+    └── Persistent Volumes
+</code></pre><h2 id="what-happens-when-kubernetes">What happens when Kubernetes</h2>
+<ol>
+<li>API Server receives YAML (when we run <code>kubectl apply -f file-name.yaml</code>)</li>
+<li>etcd stores the desired state</li>
+<li>Scheduler picks nodes for pods</li>
+<li>kubelet pulls images &amp; starts containers</li>
+<li>kube-proxy sets up network rules</li>
+<li>Controller ensures replicas stay running</li>
+<li>Service creates load balancing rules</li>
+</ol>
 </section>
 
   </article></main><footer
   class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
 >
   <div class="mr-auto">&copy;2025
-    <a class="link" href="/">Jerome Chua</a></div>
+    <a class="link" href="//localhost:1313/">Jerome Chua</a></div>
   <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
     >powered by hugo️️</a
   >️

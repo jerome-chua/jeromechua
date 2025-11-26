@@ -2,25 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jerome Chua</title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on Jerome Chua</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 May 2025 09:22:06 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>👋🏻 Hi there</title>
-      <link>/about/</link>
+      <link>//localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/about/</guid>
+      <guid>//localhost:1313/about/</guid>
       <description>&lt;p&gt;I live in 🇸🇬 Singapore, &amp;amp; currently work as an AI Engineer.&lt;/p&gt;&#xA;&lt;p&gt;✉️ Email: &lt;a href=&#34;mailto:jerome.chuame@gmail.com&#34;&gt;jerome.chuame@gmail.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;things-that-are-of-interest&#34;&gt;Things that are of interest:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Agentic AI.&lt;/strong&gt; Evaluating AI orchestration frameworks through source code analysis to understand different approaches.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Design Pattterns.&lt;/strong&gt; Working through GoF&amp;rsquo;s patterns gradually, mastering just 1-2 annually for depth.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Linguistics.&lt;/strong&gt; To use LLMs well, basic understanding is vital. Alight with Chomsky&amp;rsquo;s view innate language acquisition differs from LLM&amp;rsquo;s statistical approach (no true understanding).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Software Architecture.&lt;/strong&gt; Building competency across all levels; aiming to develop zoom-in/out capability within 5 years.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;System Design.&lt;/strong&gt; Focusing on scalable and GenAI systems; using modular understanding as foundation for new features.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Philosophy.&lt;/strong&gt; Previously dedicated Saturday mornings to Plato&amp;rsquo;s Republic; also shaped by Taylor, Rawls, and Girard&amp;rsquo;s perspectives on society.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Reach out at..</title>
-      <link>/contact/</link>
+      <link>//localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/contact/</guid>
+      <guid>//localhost:1313/contact/</guid>
       <description>&lt;p&gt;✉️ Email: &lt;a href=&#34;mailto:jerome.chuame@gmail.com&#34;&gt;jerome.chuame@gmail.com&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Container Orchestration</title>
+      <link>//localhost:1313/posts/1_orchestration_frameworks/</link>
+      <pubDate>Sun, 04 May 2025 09:22:06 +0800</pubDate>
+      <guid>//localhost:1313/posts/1_orchestration_frameworks/</guid>
+      <description>&lt;h1 id=&#34;basics&#34;&gt;Basics&lt;/h1&gt;&#xA;&lt;h2 id=&#34;why&#34;&gt;Why&lt;/h2&gt;&#xA;&lt;h2 id=&#34;how&#34;&gt;How&lt;/h2&gt;&#xA;&lt;h2 id=&#34;what&#34;&gt;What&lt;/h2&gt;&#xA;&lt;h2 id=&#34;when&#34;&gt;When&lt;/h2&gt;&#xA;&lt;h2 id=&#34;who&#34;&gt;Who&lt;/h2&gt;&#xA;&lt;h3 id=&#34;docker-compose-vs-kubernetes&#34;&gt;Docker Compose vs Kubernetes&lt;/h3&gt;&#xA;&lt;h2 id=&#34;terminology&#34;&gt;Terminology&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Cluster&#xA;Entire Kubernetes system (i.e. nodes, pods, services, Kubernetes processes)&lt;/li&gt;&#xA;&lt;li&gt;Node&#xA;Single physical/virtual machine that runs containers&lt;/li&gt;&#xA;&lt;li&gt;Pod&#xA;Smallest deployable unit in Kubernetes (usually, 1 container)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Cluster&#xA;├── Node 1&#xA;│   ├── Pod A&#xA;│   ├── Pod B&#xA;│   └── Pod C&#xA;├── Node 2&#xA;│   ├── Pod D&#xA;│   └── Pod E&#xA;└── Node 3&#xA;    ├── Pod F&#xA;    ├── Pod G&#xA;    └── Pod H&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;bare-bones-setup&#34;&gt;Bare Bones Setup&lt;/h1&gt;&#xA;&lt;h2 id=&#34;minikube--docker&#34;&gt;Minikube + Docker&lt;/h2&gt;&#xA;&lt;p&gt;Minikube is a lightweight Kubernetes &amp;hellip;&#xA;Docker automates away the need to create boilerplate code by pulling images.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

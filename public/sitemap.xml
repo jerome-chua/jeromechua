@@ -2,20 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/about/</loc>
+    <loc>//localhost:1313/about/</loc>
   </url><url>
-    <loc>/contact/</loc>
+    <loc>//localhost:1313/contact/</loc>
   </url><url>
-    <loc>/</loc>
+    <loc>//localhost:1313/posts/1_orchestration_frameworks/</loc>
     <lastmod>2025-05-04T09:22:06+08:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2025-05-04T09:22:06+08:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1313/posts/</loc>
+    <lastmod>2025-05-04T09:22:06+08:00</lastmod>
   </url><url>
-    <loc>/series/</loc>
+    <loc>//localhost:1313/categories/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>//localhost:1313/series/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
   </url>
 </urlset>
