@@ -10,6 +10,7 @@ theme = 'paper'
 
 [params]
   color = 'linen'
+  goatcounter = 'jchu4'
   twitter = 'jeromechuame'
   github = 'jerome-chua'
 
