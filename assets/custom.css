@@ -1,0 +1,62 @@
+/* Typography: match Apple's developer site (SF Pro on Apple devices, Inter elsewhere). */
+
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+    "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --default-font-family: var(--font-sans);
+}
+
+html {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Body copy: 17px / 1.47 (Apple body), tight tracking.
+   `article` is included because the theme sets its own size and leading there. */
+.prose,
+article {
+  font-size: 1.0625rem;
+  line-height: 1.47059;
+  letter-spacing: -0.022em;
+}
+
+/* Headings: semibold with tight leading, like "Explore benefits". */
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  font-weight: 600;
+}
+
+.prose h1 {
+  font-size: 2.5rem;
+  line-height: 1.08349;
+  letter-spacing: -0.003em;
+}
+
+.prose h2 {
+  font-size: 1.75rem;
+  line-height: 1.14286;
+  letter-spacing: 0.007em;
+}
+
+.prose h3 {
+  font-size: 1.3125rem;
+  line-height: 1.19048;
+  letter-spacing: 0.011em;
+}
+
+.prose h4 {
+  font-size: 1.0625rem;
+  line-height: 1.23536;
+  letter-spacing: -0.022em;
+}
+
+/* Keep code at its own tracking. */
+.prose code,
+.prose pre,
+.prose kbd {
+  letter-spacing: normal;
+}
